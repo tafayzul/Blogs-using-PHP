@@ -31,16 +31,24 @@ Update the database credentials in config.php file.
 
 **Register/Login:**
 Register a new account or log in with existing credentials.
+
 **Create a Blog:**
 Once logged in, navigate to the dashboard to create a new blog.
 Fill in the title, content, select category, and upload images/videos if needed.
+
 **Edit/Delete Blog:**
 Users can edit or delete their blogs from the dashboard.
+
 **Categorize Blogs:**
 Choose appropriate categories while creating or editing a blog for better organization.
 
+
 **Dependencies**
+
 PHP >= 7.0
+
 MySQL
+
 Bootstrap (for styling)
+
 jQuery (for interactivity)
