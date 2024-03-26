@@ -12,7 +12,8 @@ This project is a simple blog website built using PHP where users can upload blo
 4. Categorization: Blogs can be categorized for better organization and navigation.
 5. Responsive Design: The website is designed to be responsive and accessible on various devices.
 
-**   Installation**
+**Installation**
+
 Clone the Repository:
 
 git clone https://github.com/tafayzul/Blogs-using-PHP.git
