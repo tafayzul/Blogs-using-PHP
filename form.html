@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Form</title>
+</head>
+<body>
+  
+
+<form method="post" enctype="multipart/form-data">
+     <label for="firstname" > First name </label>
+     <input type="text"name="firstname" id="firstname"/><br><br>
+
+     <label for="lastname" class="formbold-form-label"> Last name </label>
+     <input type="text" name="lastname" id="lastname" /><br><br>
+
+     <label for="email" > Mail </label>
+     <input type="text"name="email" id="email"  /><br><br>
+    
+
+     <label for="upload" > Attach files </label>
+     <input type="file" name="upload" id="upload"><br><br>
+
+     <button type="submit" name="submit">Register</button>      
+</form>
+
+
+
+</body>
+
+
+<script>
+    $(document).ready(function () {
+      $('form').submit(function (e) { 
+        e.preventDefault();
+
+
+        var formData = new FormData(this);
+        
+        $.ajax({
+            type: "POST",
+            url: "ajax_insert.php",
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+              if(response=="pass"){
+                window.location.href ="http://localhost/ajax2/ajax_display.php";
+              }else{
+               alert("Can't save");
+              }
+               
+            }
+        });
+      });
+    });
+</script>
+</html>
+
