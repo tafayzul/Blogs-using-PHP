@@ -52,3 +52,9 @@ MySQL
 Bootstrap (for styling)
 
 jQuery (for interactivity)
+
+**Data Base Connection Details**
+$host= "localhost";
+$username= "root";
+$password= "";
+$dbname = "infasta";
